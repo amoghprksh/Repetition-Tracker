@@ -1,0 +1,42 @@
+    
+      h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    button {
+        font-size: 1.5em;
+        margin: 0 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    
+    .container {
+      height: 200px;
+      position: relative;
+      border: 3px solid blue;
+    }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+      

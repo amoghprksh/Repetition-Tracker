@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Repetition Tracker</title>
+
+    <style>
+          
+      h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    h2 {
+      text-align: center;
+
+  }
+
+  h3 {
+    text-align: center;
+
+}
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    button {
+        font-size: 1.5em;
+        margin: 10px 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: Crimson;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: Coral;
+    }
+
+    
+    .container {
+      height: 200px;
+      position: relative;
+      border: 3px solid blue;
+    }
+    
+    .vertical-center {
+      border: 3px solid Chocolate;
+      width: 35%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: AliceBlue;
+
+    }
+
+    body {
+      background-color: Beige;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    
+      
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <h1>Repetition Tracker using Posture Detection</h1>
+    <h2>Choose an exercise..!</h2>
+
+
+      <div class="vertical-center">
+        <button id="run-btn">Deadlift</button>
+        <button id="run-btn2">Pushups</button>
+        <button id="run-btn3">Biceps</button>
+      </div>
+
+    <h3>Perform exercise in correct form to avoid Repetitive Strain Injuries(RSI)</h3>
+
+
+
+    <script>
+      //this is for deadlifts
+      var runBtn = document.getElementById('run-btn');
+runBtn.addEventListener('click', runScript);
+
+function runScript() {
+  console.log('Button clicked'); // add this line
+  fetch('/run_script')
+  .then(function(response) {
+      console.log('Script executed'); // add this line
+  });
+}
+
+
+// this is for pushups
+
+var runBtn2 = document.getElementById('run-btn2');
+runBtn2.addEventListener('click', runScript2);
+
+function runScript2() {
+  console.log('Button clicked'); // add this line
+  fetch('/run_script2')
+  .then(function(response) {
+      console.log('Script executed'); // add this line
+  });
+}
+
+
+// this is for biceps
+
+var runBtn3 = document.getElementById('run-btn3');
+runBtn3.addEventListener('click', runScript3);
+
+function runScript3() {
+  console.log('Button clicked'); // add this line
+  fetch('/run_script3')
+  .then(function(response) {
+      console.log('Script executed'); // add this line
+  });
+}
+
+
+    </script>
+
+  </body>
+</html>
